@@ -168,9 +168,34 @@
             android:text="OK" />
 
         <TextView
-            android:id="@+id/textViewHasil"
-            android:layout_width="132dp"
-            android:layout_height="63dp"
-            android:text="Hasil" />
+            android:id="@+id/textViewHasilNama"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:text="Hasil Nama" />
+
+        <TextView
+            android:id="@+id/textViewHasilJK"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="Hasil Jenis Kelamin" />
+
+        <TextView
+            android:id="@+id/textViewHasilGolDar"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:text="Hasil Golongan Darah" />
+
+        <TextView
+            android:id="@+id/textViewHasilHobi"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:text="Hasil Hobi" />
+
+        <TextView
+            android:id="@+id/textViewHasilKB"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="Hasil Kelas Berat" />
     </LinearLayout>
 </ScrollView>

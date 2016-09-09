@@ -2,10 +2,12 @@ package id.sch.smktelkom_mlg.tugas01.xirpl1036.tugas1;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -18,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     EditText etNamaLengkap;
     CheckBox cbAngkatBeban, cbBerlari, cbBerenang;
     Button bOK;
-    TextView tvForm, tvInstitut, tvJalan, tvNamaLengkap, tvJK, tvGolDar, tvHobi, tvKelasBerat, tvHasil;
+    TextView tvForm, tvInstitut, tvJalan, tvNamaLengkap, tvJK, tvGolDar, tvHobi, tvKelasBerat, tvHasilNama, tvHasilJK, tvHasilGoldar, tvHasilHobi, tvHasilKB;
 
 
     @Override
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         imgAikido = (ImageView) findViewById(R.id.imageViewAikido);
         //radiogroup
         rgJK = (RadioGroup) findViewById(R.id.radioGroupJenisKelamin);
-        rgJK = (RadioGroup) findViewById(R.id.radioGroupGolDar);
+        rgGolDar = (RadioGroup) findViewById(R.id.radioGroupGolDar);
         //spinner
         spKelasBerat = (Spinner) findViewById(R.id.spinnerKelasBerat);
         //edit text
@@ -50,10 +52,60 @@ public class MainActivity extends AppCompatActivity {
         tvGolDar = (TextView) findViewById(R.id.textViewGolDar);
         tvHobi = (TextView) findViewById(R.id.textViewHobi);
         tvKelasBerat = (TextView) findViewById(R.id.textViewKelasBerat);
-        tvHasil = (TextView) findViewById(R.id.textViewHasil);
+        //textview hasil
+        tvHasilNama = (TextView) findViewById(R.id.textViewHasilNama);
+        tvHasilJK = (TextView) findViewById(R.id.textViewHasilJK);
+        tvHasilGoldar = (TextView) findViewById(R.id.textViewHasilGolDar);
+        tvHasilHobi = (TextView) findViewById(R.id.textViewHasilHobi);
+        tvHasilKB = (TextView) findViewById(R.id.textViewHasilKB);
 
 
+        bOK.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                doClick();
+            }
+        });
+    }
 
+    private void doClick() {
+        String hasil = null;
+
+        //textview namalengkap
+        tvHasilNama.setText("Nama Lengkap : " + etNamaLengkap.getText().toString());
+        //radiobutton jeniskelamin
+        if (rgJK.getCheckedRadioButtonId() != -1) {
+            RadioButton rbJK = (RadioButton)
+                    findViewById(rgJK.getCheckedRadioButtonId());
+            hasil = rbJK.getText().toString();
+        }
+        if (hasil == null) {
+            tvHasilJK.setText("Anda belum memilih jenis kelamin");
+        } else {
+            tvHasilJK.setText("Jenis kelamin anda : " + hasil);
+        }
+        //radiobutton goldar
+        if (rgGolDar.getCheckedRadioButtonId() != -1) {
+            RadioButton rbGolDar = (RadioButton)
+                    findViewById(rgGolDar.getCheckedRadioButtonId());
+            hasil = rbGolDar.getText().toString();
+        }
+        if (hasil == null) {
+            tvHasilGoldar.setText("Anda belum memilih golongan daerah");
+        } else {
+            tvHasilGoldar.setText("Golongan darah anda : " + hasil);
+        }
+        //checkbox hobi
+        String hasilCB = "Hobi Anda : \n";
+        if (cbAngkatBeban.isChecked()) hasilCB += cbAngkatBeban.getText() + " , ";
+        if (cbBerenang.isChecked()) hasilCB += cbBerenang.getText() + " , ";
+        if (cbBerlari.isChecked()) hasilCB += cbBerlari.getText() + " , ";
+
+        tvHasilHobi.setText(hasilCB);
+
+        //spinner kelas berat
+
+        tvHasilKB.setText("Kelas Berat : " + spKelasBerat.getSelectedItem().toString());
 
     }
 }

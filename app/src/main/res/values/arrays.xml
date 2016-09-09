@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="kelasBerat">
+        <item>Anda belum memilih</item>
         <item>A (20 kg - 40 kg)</item>
         <item>B (41 kg - 56 kg)</item>
         <item>C (57 kg - 65 kg)</item>
