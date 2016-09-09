@@ -68,6 +68,7 @@
             android:text="Jenis Kelamin" />
 
         <RadioGroup
+            android:id="@+id/radioGroupJenisKelamin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -91,6 +92,7 @@
             android:text="Golongan Darah" />
 
         <RadioGroup
+            android:id="@+id/radioGroupGolDar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -143,33 +145,32 @@
                 android:text="Berenang" />
 
             <TextView
-                android:id="@+id/textViewTTL"
+                android:id="@+id/textViewKelasBerat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tanggal Lahir" />
-
-            <Spinner
-                android:id="@+id/spinnerTanggal"
-                android:layout_width="154dp"
-                android:layout_height="wrap_content" />
+                android:text="Kelas Berat" />
 
         </RadioGroup>
 
         <Spinner
-            android:id="@+id/spinnerBulan"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content" />
+            android:id="@+id/spinnerKelasBerat"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/kelasBerat">
 
-        <Spinner
-            android:id="@+id/spinnerTahun"
-            android:layout_width="141dp"
-            android:layout_height="wrap_content" />
+        </Spinner>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonOK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:text="New Button" />
+            android:text="OK" />
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="132dp"
+            android:layout_height="63dp"
+            android:text="Hasil" />
     </LinearLayout>
 </ScrollView>
