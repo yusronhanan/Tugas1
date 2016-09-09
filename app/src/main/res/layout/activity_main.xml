@@ -25,43 +25,44 @@
             android:layout_height="match_parent" />
 
         <TextView
+            android:id="@+id/textViewFormulir"
             style="@style/Base.TextAppearance.AppCompat.Headline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="FORMULIR PENDAFTARAN" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewInstitut"
             style="@style/Base.TextAppearance.AppCompat.Subhead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Institut Aikido Indonesia" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewJalan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jl. Antena VII No.2A Malang, Jawa Timur" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageViewAikido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/aikido" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewNamaLengkap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama Lengkap" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editTextNamaLengkap"
             android:layout_width="353dp"
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewJenisKelamin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jenis Kelamin" />
@@ -71,20 +72,20 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/radioButtonLaki"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Laki-Laki" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/radioButtonPerempuan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Perempuan" />
         </RadioGroup>
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewGolDar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Golongan Darah" />
@@ -94,73 +95,73 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/radioButtonGolA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="A" />
 
             <RadioButton
-                android:id="@+id/radioButton4"
+                android:id="@+id/radioButtonGolB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="B" />
 
             <RadioButton
-                android:id="@+id/radioButton5"
+                android:id="@+id/radioButtonAB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="AB" />
 
             <RadioButton
-                android:id="@+id/radioButton6"
+                android:id="@+id/radioButtonO"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="O" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textViewHobi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Hobi" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBoxAngkatBeban"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Angkat Beban" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/checkBoxBerlari"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Berlari" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/checkBoxBerenang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Berenang" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/textViewTTL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tanggal Lahir" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/spinnerTanggal"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content" />
 
         </RadioGroup>
 
         <Spinner
-            android:id="@+id/spinner2"
+            android:id="@+id/spinnerBulan"
             android:layout_width="150dp"
             android:layout_height="wrap_content" />
 
         <Spinner
-            android:id="@+id/spinner3"
+            android:id="@+id/spinnerTahun"
             android:layout_width="141dp"
             android:layout_height="wrap_content" />
 
