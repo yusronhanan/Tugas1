@@ -107,5 +107,26 @@ public class MainActivity extends AppCompatActivity {
 
         tvHasilKB.setText("Kelas Berat : " + spKelasBerat.getSelectedItem().toString());
 
+
+        if (isValid()) {
+
+        }
+    }
+
+    private boolean isValid() {
+        boolean valid = true;
+
+        String namaLengkap = etNamaLengkap.getText().toString();
+
+        String hasil = null;
+        String kelasBerat = spKelasBerat.getSelectedItem().toString();
+
+        if (namaLengkap.isEmpty()) {
+            etNamaLengkap.setError("Nama anda belum diisi");
+            valid = false;
+        }
+
+
+        return valid;
     }
 }
