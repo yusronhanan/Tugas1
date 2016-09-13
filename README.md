@@ -33,8 +33,9 @@ https://drive.google.com/file/d/0B5EhfcJAfCAoMEVWZTNTV0RZVG8/view?usp=sharing
 - Nama Sekolah : SMK Telkom Malang
 
 ### D. Screenshot
-- https://drive.google.com/file/d/0B5EhfcJAfCAoSnl3QzJ5bkVzSUE/view?usp=sharing
-- https://drive.google.com/file/d/0B5EhfcJAfCAoN2dfSGdkS0NaUW8/view?usp=sharing
-- https://drive.google.com/file/d/0B5EhfcJAfCAobE5LeXExckZMd2s/view?usp=sharing
-- https://drive.google.com/file/d/0B5EhfcJAfCAoR0x6Nk1WeFlxYjg/view?usp=sharing
-- https://drive.google.com/file/d/0B5EhfcJAfCAoT0ZuRE5NcVNoOGs/view?usp=sharing
+![logo1](https://github.com/yusronhanan/Tugas1/blob/master/1.PNG)
+![logo2](https://github.com/yusronhanan/Tugas1/blob/master/2.PNG)
+![logo3](https://github.com/yusronhanan/Tugas1/blob/master/3.PNG)
+![logo4](https://github.com/yusronhanan/Tugas1/blob/master/4.PNG)
+![logo5](https://github.com/yusronhanan/Tugas1/blob/master/5.PNG)
+
